@@ -1,0 +1,77 @@
+{
+  "local_map": {
+    "image": "https://www.google.com/maps/vt/data=4zJ7N1y_P7sD11F4Z4iWqY4OapyAGFCd3qYsAiLA__cc5I9aktY6TJsy8kSk-tJAA8LgPC8bj-dRhpjHk_mXQlEf5OKdqbt9BnAHJ8qja7b7Batz--iGVlpzOKzLC3bZCk0t1gvPa-2poa2w-XPj----4Y9B1GvOQB1jBq1DG6ERx6lHWo_QBIjxquKUSp2T60nfuay1l2bJm3wiIwXzy8cuXr9dUMOL6W5M2mE5jteqw8Tq1ATJ4kLb3EhUsOaFvAdkAiM-Cn1tukh1PUnum2FplriY4OBsrEeDpmoZzHuJQ-itN7YfqM3IsXazuZS4L-vhqtRPqzrvjYlbBFkDf4xa5QmOSmfVO6-e44xaWrk9GjrYfunAfy0rZXvrEbu7ID1R2mU_klUidVj_tEJI8uCoT4vphOSALse1KTnlUTdomrZW4ev54u-qViv7l0AyxdVKZ8IlHJ47Z86DHJjFHLhpaxJGJ4J0dm-PYclluIrXhzflZquWQLlT3IgrNdemDaZw7FQZOtbUhUuNH-JzBVLEvc5Cjw9QYEdJywJRbO0_a6LNrhtiuCga3Fhjb6XXkRq-xZpn4u-raXip66gdOSig3IJBWz5pM2LSYyZ4wCy36AY2odWcD8ZXIOE8KJlmdN4B6Ruf3Xu8X3k-Q8k4Aaj3iIj-4yOD_A"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "Houndstooth Coffee",
+      "rating": 4.6,
+      "reviews_original": "(862)",
+      "reviews": 862,
+      "price": "$$",
+      "address": "401 Congress Ave. #100c",
+      "type": "Coffee shop",
+      "description": "Cozy hangout for carefully sourced brews",
+      "place_id": "11265938073076301333",
+      "place_id_search": "https://serpapi.com/search.json?device=mobile&engine=google_local&gl=us&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&ludocid=11265938073076301333&q=Coffee",
+      "lsig": "AB86z5WAwZ6EQxM6P9ZAHqnLlPp2",
+      "images": [
+        "https://lh5.googleusercontent.com/p/AF1QipNRZ1ehiInk8CTrHCD08GnhcnF7e4q-1H8Qs8mG=w288-h288-n-k-no"
+        
+      ],
+      "links": {
+        "phone": "+15123946051",
+        "directions": "https://maps.google.com/maps/dir//Houndstooth+Coffee,+401+Congress+Ave.+%23100c,+Austin,+TX+78701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b50847967b9f:0x9c58a6fceb42fe15?entry=s&sa=X&hl=en&gl=us"
+      }
+    },
+    {
+      "position": 2,
+      "title": "Progress Coffee",
+      "rating": 5,
+      "reviews_original": "(4)",
+      "reviews": 4,
+      "address": "515 Congress Ave.",
+      "type": "Coffee shop",
+      "place_id": "1973998765368382603",
+      "place_id_search": "https://serpapi.com/search.json?device=mobile&engine=google_local&gl=us&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&ludocid=1973998765368382603&q=Coffee",
+      "lsig": "AB86z5Vgm9PIfiTDMS_8Z3VZNXAm",
+      "images": [
+        "https://lh5.googleusercontent.com/p/AF1QipOLLcw0l3U8GXrKbvKluDBxgYnpsMMDcBBqVVQq=w288-h288-n-k-no"
+        
+      ],
+      "service_options": {
+        "dine_in": true,
+        "takeout": true
+      },
+      "links": {
+        "directions": "https://maps.google.com/maps/dir//Progress+Coffee,+515+Congress+Ave.,+Austin,+TX+78701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b538620ec6dd:0x1b650d6b1cd7948b?entry=s&sa=X&hl=en&gl=us",
+        "order": "https://food.google.com/chooseprovider?restaurantId=/g/11s74wmx6b&g2lbs=ADZRdksd26nKYTMy6ziINvBaF4lPuF7YYQuhTnVLqyFunxYjagjGxB2EqHmSlzTmyRMjzCWJ0r4slqvchtzQ4VhC1yj79gVed4Xz3UWu6bJfkHkqZj1U-Qg%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search_restaurant_list&gei=SDQkZLi6F6OjptQPzJCuyAo&ei=SDQkZLi6F6OjptQPzJCuyAo&fo_s=OA,AH,SOE"
+      }
+    },
+    {
+      "position": 3,
+      "title": "The Hideout Coffee House",
+      "rating": 4.4,
+      "reviews_original": "(452)",
+      "reviews": 452,
+      "price": "$",
+      "address": "617 Congress Ave.",
+      "type": "Coffee shop",
+      "description": "Area institution with a theater upstairs",
+      "place_id": "15498522356495312950",
+      "place_id_search": "https://serpapi.com/search.json?device=mobile&engine=google_local&gl=us&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&ludocid=15498522356495312950&q=Coffee",
+      "lsig": "AB86z5UgUFSFJo4bxVHuQ_dMtn-7",
+      "images": [
+        "https://lh5.googleusercontent.com/p/AF1QipPRRlLNKcWrvy-W13YzMiKIDRjPR03NabVX9j4D=w288-h288-n-k-no"
+        
+      ],
+      "links": {
+        "phone": "+15124761313",
+        "directions": "https://maps.google.com/maps/dir//The+Hideout+Coffee+House,+617+Congress+Ave.,+Austin,+TX+78701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b509dc5317d5:0xd715cff7f25a6836?entry=s&sa=X&hl=en&gl=us",
+        "order": "https://food.google.com/chooseprovider?restaurantId=/g/12qhb_bv0&g2lbs=ADZRdks9KbUTy6veglqdoHq9xooO0dZVMS-xPsPVvNmDUpAIUwWPJ4v4_m4hJj5aq9d90bm4iwvP3FsbcDNPz_oY7jWGnl3taE7hSZ7qqFwPhs19nHAI1-o%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search_restaurant_list&gei=SDQkZLi6F6OjptQPzJCuyAo&ei=SDQkZLi6F6OjptQPzJCuyAo&fo_s=OA,AH,SOE"
+      }
+    }
+    
+  ]
+}
