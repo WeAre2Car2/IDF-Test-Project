@@ -1,11 +1,11 @@
 import json
 
-# Creating a resturant class, each resturant object will hold 1 resturant info
+# Creating a restaurant class, each resturant object will hold 1 resturant info
 class Restaurant():
-   def __init__(self, resturant_name, resturant_rating, resturant_open_status):
-      self.resturant_name = resturant_name
-      self.resturant_rating = resturant_rating
-      self.resturant_open_status = resturant_open_status
+   def __init__(self, restaurant_name, restaurant_rating, restaurant_open_status):
+      self.restaurant_name = restaurant_name
+      self.restaurant_rating = restaurant_rating
+      self.restaurant_open_status = restaurant_open_status
  
       
 
