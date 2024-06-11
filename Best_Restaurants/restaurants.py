@@ -60,6 +60,7 @@ class Restaurant():
     return rating_list
   
   # Retrieves the open status from given value, no open status in the JSON example file
+  @staticmethod
   def get_open_status():
     with open('F:\Projects\IDF_Test_Project\Best_Restaurants\sorted_data.json', 'r') as openfile:
   
@@ -72,6 +73,9 @@ class Restaurant():
     return is_open_list
   
   @staticmethod
+  #takes the lists created earlier and creates
+  # a list of restaurants with the data from these lists.
+  # prints for debugging
   def get_restaurants(num_of_restaurants):
     # Creating lists of the attributes
     title_list = Restaurant.get_titles()
