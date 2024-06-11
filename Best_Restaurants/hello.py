@@ -15,6 +15,6 @@ def login():
 
 @app.route('/hello/')
 @app.route('/hello/<name>')
-def hello(name="Nadav"):
+def hello(name="Bro"):
     return render_template('hello.html', person=name)
-app.run()
+app.run(debug=True)
