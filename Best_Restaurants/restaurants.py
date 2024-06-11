@@ -85,12 +85,11 @@ class Restaurant():
     restaurant_list = []
     for i in range(num_of_restaurants):
       restaurant_list.append(Restaurant(title_list[i], rating_list[i], open_status[i]))
-      print(f"{restaurant_list[i].get_restaurant_name()}, {restaurant_list[i].get_restaurant_rating()}, {restaurant_list[i].get_restaurant_open_status()}")
-
 
 def main():
+  NUM_OF_RESTAURANTS = 5 #const value
   Restaurant.sort_JSON() 
-  Restaurant.get_restaurants(5)
+  Restaurant.get_restaurants(NUM_OF_RESTAURANTS) 
 
 if __name__ == "__main__":
    main()
