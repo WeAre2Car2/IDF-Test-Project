@@ -5,11 +5,13 @@ from restaurants import Restaurant
 # Learning how to use flask
 app = Flask(__name__)
 
-restaurant_list = Restaurant.get_restaurants(5)
+Restaurant.sort_JSON() 
+NUM_OF_RESTAURANTS = 5 # Constant, should not change
+restaurant_list = Restaurant.get_restaurants(NUM_OF_RESTAURANTS)
 
 
 @app.route('/')
 def homepage():
-    
+
     return render_template('index.html', length = len(restaurant_list), restaurant_list = restaurant_list)
 app.run(debug=True)

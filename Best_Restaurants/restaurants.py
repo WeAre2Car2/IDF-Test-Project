@@ -84,9 +84,7 @@ class Restaurant():
     return restaurant_list
 
 def main():
-  NUM_OF_RESTAURANTS = 5 #const value
-  Restaurant.sort_JSON() 
-  Restaurant.get_restaurants(NUM_OF_RESTAURANTS) 
+  pass
 
 if __name__ == "__main__":
    main()
