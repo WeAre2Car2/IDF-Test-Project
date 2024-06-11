@@ -8,7 +8,6 @@ class Restaurant():
     self.restaurant_open_status = restaurant_open_status
     self.resturant_list = []
   
-  @staticmethod
   def sort_JSON(): #sorts the JSON so that the best rating will be on top and saves to a new file!
     with open('F:\Projects\IDF_Test_Project\Best_Restaurants\search_example.json', 'r') as openfile:
       # Reading from json file
@@ -60,7 +59,6 @@ class Restaurant():
     return rating_list
   
   # Retrieves the open status from given value, no open status in the JSON example file
-  @staticmethod
   def get_open_status():
     with open('F:\Projects\IDF_Test_Project\Best_Restaurants\sorted_data.json', 'r') as openfile:
   
@@ -72,10 +70,8 @@ class Restaurant():
       is_open_list.append(result["hours"])
     return is_open_list
   
-  @staticmethod
   #takes the lists created earlier and creates
-  # a list of restaurants with the data from these lists.
-  # prints for debugging
+  # a list of restaurant objects with the data from these lists.
   def get_restaurants(num_of_restaurants):
     # Creating lists of the attributes
     title_list = Restaurant.get_titles()
@@ -85,6 +81,7 @@ class Restaurant():
     restaurant_list = []
     for i in range(num_of_restaurants):
       restaurant_list.append(Restaurant(title_list[i], rating_list[i], open_status[i]))
+    return restaurant_list
 
 def main():
   NUM_OF_RESTAURANTS = 5 #const value
