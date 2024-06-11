@@ -5,16 +5,7 @@ from flask import url_for
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-    return 'index'
-
-@app.route('/login')
-def login():
-    return 'login'
-
 @app.route('/hello/')
 @app.route('/hello/<name>')
-def hello(name="Bro"):
+def hello(name=None):
     return render_template('hello.html', person=name)
-app.run(debug=True)

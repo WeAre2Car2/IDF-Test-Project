@@ -4,6 +4,30 @@
   },
   "local_results": [
     {
+      "position": 2,
+      "title": "Progress Coffee",
+      "rating": 5,
+      "reviews_original": "(4)",
+      "reviews": 4,
+      "address": "515 Congress Ave.",
+      "type": "Coffee shop",
+      "hours": "Open 24/7",
+      "place_id": "1973998765368382603",
+      "place_id_search": "https://serpapi.com/search.json?device=mobile&engine=google_local&gl=us&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&ludocid=1973998765368382603&q=Coffee",
+      "lsig": "AB86z5Vgm9PIfiTDMS_8Z3VZNXAm",
+      "images": [
+        "https://lh5.googleusercontent.com/p/AF1QipOLLcw0l3U8GXrKbvKluDBxgYnpsMMDcBBqVVQq=w288-h288-n-k-no"
+      ],
+      "service_options": {
+        "dine_in": true,
+        "takeout": true
+      },
+      "links": {
+        "directions": "https://maps.google.com/maps/dir//Progress+Coffee,+515+Congress+Ave.,+Austin,+TX+78701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b538620ec6dd:0x1b650d6b1cd7948b?entry=s&sa=X&hl=en&gl=us",
+        "order": "https://food.google.com/chooseprovider?restaurantId=/g/11s74wmx6b&g2lbs=ADZRdksd26nKYTMy6ziINvBaF4lPuF7YYQuhTnVLqyFunxYjagjGxB2EqHmSlzTmyRMjzCWJ0r4slqvchtzQ4VhC1yj79gVed4Xz3UWu6bJfkHkqZj1U-Qg%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search_restaurant_list&gei=SDQkZLi6F6OjptQPzJCuyAo&ei=SDQkZLi6F6OjptQPzJCuyAo&fo_s=OA,AH,SOE"
+      }
+    },
+    {
       "position": 1,
       "title": "Houndstooth Coffee",
       "rating": 4.6,
@@ -19,36 +43,10 @@
       "lsig": "AB86z5WAwZ6EQxM6P9ZAHqnLlPp2",
       "images": [
         "https://lh5.googleusercontent.com/p/AF1QipNRZ1ehiInk8CTrHCD08GnhcnF7e4q-1H8Qs8mG=w288-h288-n-k-no"
-        
       ],
       "links": {
         "phone": "+15123946051",
         "directions": "https://maps.google.com/maps/dir//Houndstooth+Coffee,+401+Congress+Ave.+%23100c,+Austin,+TX+78701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b50847967b9f:0x9c58a6fceb42fe15?entry=s&sa=X&hl=en&gl=us"
-      }
-    },
-    {
-      "position": 2,
-      "title": "Progress Coffee",
-      "rating": 5,
-      "reviews_original": "(4)",
-      "reviews": 4,
-      "address": "515 Congress Ave.",
-      "type": "Coffee shop",
-      "hours": "Open 24/7",
-      "place_id": "1973998765368382603",
-      "place_id_search": "https://serpapi.com/search.json?device=mobile&engine=google_local&gl=us&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&ludocid=1973998765368382603&q=Coffee",
-      "lsig": "AB86z5Vgm9PIfiTDMS_8Z3VZNXAm",
-      "images": [
-        "https://lh5.googleusercontent.com/p/AF1QipOLLcw0l3U8GXrKbvKluDBxgYnpsMMDcBBqVVQq=w288-h288-n-k-no"
-        
-      ],
-      "service_options": {
-        "dine_in": true,
-        "takeout": true
-      },
-      "links": {
-        "directions": "https://maps.google.com/maps/dir//Progress+Coffee,+515+Congress+Ave.,+Austin,+TX+78701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b538620ec6dd:0x1b650d6b1cd7948b?entry=s&sa=X&hl=en&gl=us",
-        "order": "https://food.google.com/chooseprovider?restaurantId=/g/11s74wmx6b&g2lbs=ADZRdksd26nKYTMy6ziINvBaF4lPuF7YYQuhTnVLqyFunxYjagjGxB2EqHmSlzTmyRMjzCWJ0r4slqvchtzQ4VhC1yj79gVed4Xz3UWu6bJfkHkqZj1U-Qg%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search_restaurant_list&gei=SDQkZLi6F6OjptQPzJCuyAo&ei=SDQkZLi6F6OjptQPzJCuyAo&fo_s=OA,AH,SOE"
       }
     },
     {
@@ -67,12 +65,31 @@
       "lsig": "AB86z5UgUFSFJo4bxVHuQ_dMtn-7",
       "images": [
         "https://lh5.googleusercontent.com/p/AF1QipPRRlLNKcWrvy-W13YzMiKIDRjPR03NabVX9j4D=w288-h288-n-k-no"
-        
       ],
       "links": {
         "phone": "+15124761313",
         "directions": "https://maps.google.com/maps/dir//The+Hideout+Coffee+House,+617+Congress+Ave.,+Austin,+TX+78701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8644b509dc5317d5:0xd715cff7f25a6836?entry=s&sa=X&hl=en&gl=us",
         "order": "https://food.google.com/chooseprovider?restaurantId=/g/12qhb_bv0&g2lbs=ADZRdks9KbUTy6veglqdoHq9xooO0dZVMS-xPsPVvNmDUpAIUwWPJ4v4_m4hJj5aq9d90bm4iwvP3FsbcDNPz_oY7jWGnl3taE7hSZ7qqFwPhs19nHAI1-o%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search_restaurant_list&gei=SDQkZLi6F6OjptQPzJCuyAo&ei=SDQkZLi6F6OjptQPzJCuyAo&fo_s=OA,AH,SOE"
+      }
+    },
+    {
+      "position": 5,
+      "title": "Starbucks",
+      "rating": 4.3,
+      "reviews_original": "(488)",
+      "reviews": 488,
+      "price": "$$",
+      "type": "Coffee shop",
+      "hours": "Closed Forever",
+      "address": "301 W 3rd St",
+      "description": "Iconic Seattle-based coffeehouse chain",
+      "place_id": "14343056409938523336",
+      "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google_local&gl=us&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&ludocid=14343056409938523336&q=Coffee",
+      "lsig": "AB86z5VlzJFxycG7xUXBLf12UDjN",
+      "thumbnail": "<URL to image>",
+      "gps_coordinates": {
+        "latitude": 30.265863000000003,
+        "longitude": -97.74649199999999
       }
     },
     {
@@ -102,27 +119,6 @@
         "Medicare/Medicaid accepted",
         "Free or low-cost care"
       ]
-    },
-    {
-      "position": 5,
-      "title": "Starbucks",
-      "rating": 4.3,
-      "reviews_original": "(488)",
-      "reviews": 488,
-      "price": "$$",
-      "type": "Coffee shop",
-      "hours": "Closed Forever",
-      "address": "301 W 3rd St",
-      "description": "Iconic Seattle-based coffeehouse chain",
-      "place_id": "14343056409938523336",
-      "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google_local&gl=us&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&ludocid=14343056409938523336&q=Coffee",
-      "lsig": "AB86z5VlzJFxycG7xUXBLf12UDjN",
-      "thumbnail": "<URL to image>",
-      "gps_coordinates": {
-        "latitude": 30.265863000000003,
-        "longitude": -97.74649199999999
-      }
     }
-    
   ]
 }
