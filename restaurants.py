@@ -58,7 +58,9 @@ class Restaurant():
 
     is_open_list = []
     for result in data["local_results"]:
-      is_open_list.append(result["hours"])
+      try:
+        is_open_list.append(result["hours"])
+      except: KeyError
     return is_open_list
   
   #takes the lists created earlier and creates

@@ -5,8 +5,7 @@ def main(): # Parameters to get restaurants in Ny since hebrew doesnt work
   params = {
   "engine": "google_maps",
   "q": "Restaurant",
-  "ll": "@32.4742437,34.993965,15z",
-  "type": "search",
+  "location": "New York, New York, United States",
   "api_key": "f9ae0429c9b651cbee59c3229372fadeefe5c448360b1d791b13b099b9baf303"
 }
   search = serpapi.search(params) # Searches
