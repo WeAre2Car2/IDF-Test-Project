@@ -1,4 +1,5 @@
 import json
+import get_restaurants_api as json_get
 
 # Creating a restaurant class, each resturant object will hold 1 resturant info
 class Restaurant():
@@ -8,18 +9,15 @@ class Restaurant():
     self.restaurant_open_status = restaurant_open_status
     self.resturant_list = []
   
-  @staticmethod
   def sort_JSON(): #sorts the JSON so that the best rating will be on top and saves to a new file!
-    with open('F:\Projects\IDF_Test_Project\Best_Restaurants\search_example.json', 'r') as openfile:
-      # Reading from json file
-      data = json.load(openfile)
+    data = json_get.main() # Loads to string
+    data_json = json.loads(data) # Converts to json
     # Sort the local_results based on the rating in descending order
-    sorted_results = sorted(data['local_results'], key=lambda x: x['rating'], reverse=True)
+    sorted_results = sorted(data_json['local_results'], key=lambda x: x['rating'], reverse=True)
     # Update the original data with the sorted results
-    data['local_results'] = sorted_results
-    # Print the sorted data
-    with open('Best_Restaurants/sorted_data.json', 'w') as outfile:
-      json.dump(data, outfile, indent=2)
+    data_json['local_results'] = sorted_results
+    # Returns the sorted data
+    return data_json
 
   # Gets and Sets the values of the object
   def get_restaurant_name(self):
@@ -38,10 +36,7 @@ class Restaurant():
     self.resturant_list.append(restaurant)
     
   def get_titles():
-    with open('F:\Projects\IDF_Test_Project\Best_Restaurants\sorted_data.json', 'r') as openfile:
-  
-      # Reading from json file
-      data = json.load(openfile)
+    data = Restaurant.sort_JSON()
 
     title_list = []
     for result in data["local_results"]:
@@ -50,9 +45,7 @@ class Restaurant():
   
   # Retrieves the ratings from an example JSON file
   def get_ratings():
-    with open('F:\Projects\IDF_Test_Project\Best_Restaurants\sorted_data.json', 'r') as openfile:
-      # Reading from json file
-      data = json.load(openfile)
+    data = Restaurant.sort_JSON()
 
     rating_list = []
     for result in data["local_results"]:
@@ -60,22 +53,18 @@ class Restaurant():
     return rating_list
   
   # Retrieves the open status from given value, no open status in the JSON example file
-  @staticmethod
   def get_open_status():
-    with open('F:\Projects\IDF_Test_Project\Best_Restaurants\sorted_data.json', 'r') as openfile:
-  
-      # Reading from json file
-      data = json.load(openfile)
+    data = Restaurant.sort_JSON()
 
     is_open_list = []
     for result in data["local_results"]:
-      is_open_list.append(result["hours"])
+      try:
+        is_open_list.append(result["hours"])
+      except: KeyError
     return is_open_list
   
-  @staticmethod
   #takes the lists created earlier and creates
-  # a list of restaurants with the data from these lists.
-  # prints for debugging
+  # a list of restaurant objects with the data from these lists.
   def get_restaurants(num_of_restaurants):
     # Creating lists of the attributes
     title_list = Restaurant.get_titles()
@@ -83,14 +72,17 @@ class Restaurant():
     open_status = Restaurant.get_open_status()
     # Creating a list of restaurant objects
     restaurant_list = []
-    for i in range(num_of_restaurants):
-      restaurant_list.append(Restaurant(title_list[i], rating_list[i], open_status[i]))
-      print(f"{restaurant_list[i].get_restaurant_name()}, {restaurant_list[i].get_restaurant_rating()}, {restaurant_list[i].get_restaurant_open_status()}")
-
+    try:
+      for i in range(num_of_restaurants):
+        restaurant_list.append(Restaurant(title_list[i], rating_list[i], open_status[i]))
+    
+    except IndexError:
+      print("Out Of Bounds")
+    
+    return restaurant_list
 
 def main():
-  Restaurant.sort_JSON() 
-  Restaurant.get_restaurants(5)
+  pass
 
 if __name__ == "__main__":
    main()
