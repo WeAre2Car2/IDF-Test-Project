@@ -6,7 +6,7 @@ from restaurants import Restaurant
 app = Flask(__name__)
 
 Restaurant.sort_JSON() 
-NUM_OF_RESTAURANTS = 5 # Constant, should not change
+NUM_OF_RESTAURANTS = 10 # Constant, should not change
 restaurant_list = Restaurant.get_restaurants(NUM_OF_RESTAURANTS)
 
 
