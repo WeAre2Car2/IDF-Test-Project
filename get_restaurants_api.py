@@ -1,7 +1,12 @@
+import os
+
 import serpapi
 import json
+from dotenv import load_dotenv
 
-def main(): # Parameters to get restaurants in Ny since hebrew doesnt work
+def main():
+  load_dotenv()
+  api_key = os.getenv("API_KEY")
   params = {
   "engine": "google_local",
         "engine": "google_maps",
@@ -11,7 +16,7 @@ def main(): # Parameters to get restaurants in Ny since hebrew doesnt work
         "google_domain": "google.co.il",
         "hl": "en",
         "gl": "il",
-    "api_key": "041287f340959981e1aa3e6ea6a4b4c9721a05422c6e2ccc476dc91320c744a5"
+    "api_key": api_key
     #"api_key": "f9ae0429c9b651cbee59c3229372fadeefe5c448360b1d791b13b099b9baf303"
 }
   search = serpapi.search(params) # Searches
