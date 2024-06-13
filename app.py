@@ -15,3 +15,5 @@ def homepage():
 
     return render_template('index.html', length = len(restaurant_list), restaurant_list = restaurant_list)
 app.run(debug=True)
+
+# docker run -p 5000:5000
