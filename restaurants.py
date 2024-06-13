@@ -3,11 +3,10 @@ import get_restaurants_api as json_get
 
 # Creating a restaurant class, each resturant object will hold 1 resturant info
 class Restaurant():
-  def __init__(self, restaurant_name, restaurant_rating, restaurant_open_status):
-    self.restaurant_name = restaurant_name
+  def __init__(self, restaurant_title, restaurant_rating, restaurant_open_status):
+    self.restaurant_title = restaurant_title
     self.restaurant_rating = restaurant_rating
     self.restaurant_open_status = restaurant_open_status
-    self.resturant_list = []
   
   def sort_JSON(): #sorts the JSON so that the best rating will be on top and saves to a new file!
     data = json_get.main() # Loads to string
@@ -20,8 +19,8 @@ class Restaurant():
     return data_json
 
   # Gets and Sets the values of the object
-  def get_restaurant_name(self):
-    return self.restaurant_name
+  def get_restaurant_title(self):
+    return self.restaurant_title
   
   def get_restaurant_rating(self):
     return self.restaurant_rating
@@ -69,7 +68,6 @@ class Restaurant():
     
     except IndexError:
       print("Out Of Bounds")
-    
     return restaurant_list
 
 def main():
