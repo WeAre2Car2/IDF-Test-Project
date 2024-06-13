@@ -13,7 +13,7 @@ class Restaurant():
     data = json_get.main() # Loads to string
     data_json = json.loads(data) # Converts to json
     # Sort the local_results based on the rating in descending order
-    sorted_results = sorted(data_json['local_results'], key=lambda x: x['rating'], reverse=True)
+    sorted_results = sorted(data_json['local_results'], key=lambda x: x.get('rating', 0), reverse=True)
     # Update the original data with the sorted results
     data_json['local_results'] = sorted_results
     # Returns the sorted data
@@ -37,30 +37,21 @@ class Restaurant():
     
   def get_titles():
     data = Restaurant.sort_JSON()
-
-    title_list = []
-    for result in data["local_results"]:
-      title_list.append(result["title"])
+    title_list = [result["title"] for result in data["local_results"]]
     return title_list
   
   # Retrieves the ratings from an example JSON file
   def get_ratings():
     data = Restaurant.sort_JSON()
-
-    rating_list = []
-    for result in data["local_results"]:
-      rating_list.append(result["rating"])
+    #Gives The rating out of the json file, and no rating if the api didnt return any
+    rating_list = [result.get("rating", "No Rating!") for result in data["local_results"]] 
     return rating_list
   
   # Retrieves the open status from given value, no open status in the JSON example file
   def get_open_status():
     data = Restaurant.sort_JSON()
-
-    is_open_list = []
-    for result in data["local_results"]:
-      try:
-        is_open_list.append(result["hours"])
-      except: KeyError
+    #Gives The opening hours and if its open out of the json file, and "Unknown" if the api didnt return any
+    is_open_list = [result.get("hours", "Unknown") for result in data["local_results"]]
     return is_open_list
   
   #takes the lists created earlier and creates
