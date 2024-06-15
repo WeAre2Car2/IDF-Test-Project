@@ -1,6 +1,9 @@
 An application that print out 10 of the best restaurants in Pardes Hana - Karkur.
 Using Flask, SerpAPI and HTML.
 
+Full DevLog -
+https://docs.google.com/document/d/1mkcwvSBSLPz9QdM4lPZAQP8IseL-r2E9XegbkxCUXSc/edit?usp=sharing
+
 Requierements (Docker):
 Docker installed and running
 A terminal window/CMD
